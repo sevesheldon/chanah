@@ -1,0 +1,172 @@
+
+/************** BODY ***************/
+
+body {
+    background-image: url(../img/bamboo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 18%;
+}
+
+.wrapper {
+    margin: 0 4% 0 1% !important;
+}
+
+.logo {
+    display: inline-block;
+    width: 15%;
+    margin: 2%;
+}   
+
+/************** NAV ***************/
+#menu {
+    width: 60px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: #4e8493;
+    /*background-color: #d59e42;*/
+    color: #FFFFFF;
+    z-index: 3;
+    box-shadow: 0 -20px 60px rgba(7,5,9,.5);
+	-webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+}
+#menu.open {
+	width: 270px;
+	-webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+}
+.nav {
+    padding: 100px 60px;
+}
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#menu ul li a{
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+#burger {
+    position: fixed;
+    right: 17px;
+    top: 17px;
+    z-index: 9999;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+}
+#burger1,
+#burger2,
+#burger3 {
+    width: 24px;
+    height: 4px;
+    background-color: #FFFFFF;
+    position: absolute;
+    opacity:1;
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+}
+#burger2 {
+    top: 8px;
+}
+#burger3 {
+    top: 16px;
+}
+#menu.open #burger1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+}
+#menu.open #burger2 {
+    height: 0;
+    width:0;
+    opacity:0;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+}
+#menu.open #burger3 {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+}
+.current-menu-item a {
+    text-decoration: underline;
+}
+
+#footer {
+	display: none;
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+}
+
+#menu.open #footer {
+	display: inline-block;
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    width: inherit;
+}
+
+#menu.open #footer p {
+	font-size: 14px;
+}
+
+#menu.open #footer a {
+	color: #fff;
+}
+
+
+/************** Home Page Template ***************/
+
+.content-box {
+    width: 650px;
+    max-width: 95%;
+    margin: 0 auto 60px;
+    background-color: rgba(256,256,256,.9);
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 9px;
+    height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 11px solid transparent;
+}
+
+/**************** MEDIA QUERIES *****************/
+
+@media screen and (max-width: 768px){
+
+    #menu.open{
+        width:100%;
+    }
+
+    .content-box {
+        max-width: 70%;
+        height: auto;
+        margin: 20px 18% 60px 10%;
+        padding: 10px;
+    }
+}
