@@ -1,6 +1,14 @@
 
 /************** BODY ***************/
 
+* {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+p {
+    font-size: 16px;
+}
+
 body {
     background-image: url(../img/goldfield.jpg);
     background-repeat: no-repeat;
@@ -150,7 +158,6 @@ body {
     margin: 10% auto;
     background-color: rgba(256,256,256,.8);
     padding: 20px;
-    height: 75vh;
     overflow: hidden;
 }
 
