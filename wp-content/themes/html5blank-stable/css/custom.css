@@ -157,8 +157,16 @@ body {
     width: 650px;
     margin: 10% auto;
     background-color: rgba(256,256,256,.8);
-    padding: 20px;
+    padding: 20px 40px;
     overflow: hidden;
+}
+
+/************** Page Template ***************/
+
+#page-title {
+    font-size: 30px;
+    text-align: center;
+
 }
 
 /**************** MEDIA QUERIES *****************/
