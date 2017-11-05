@@ -61,7 +61,7 @@ body {
 }
 #menu ul li a{
 	color: #FFF;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
 	white-space: nowrap;
 }
@@ -153,7 +153,7 @@ body {
 /************** Home Page Template ***************/
 
 .content-box {
-    width: 80%;
+    width: 75%;
     margin: 10% auto;
     background-color: rgba(256,256,256,.8);
     padding: 20px 40px;
@@ -190,7 +190,16 @@ body {
     font-size: 30px;
     text-align: center;
     font-weight: 600;
+}
 
+#page-header-name {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#page-header-name h1, #page-header-name h1 strong {
+    font-family: Georgia, Serif;
+    font-size: 18px !important;
 }
 
 /**************** MEDIA QUERIES *****************/
@@ -213,6 +222,10 @@ body {
     #menu {
         background-color: transparent;
         box-shadow: none;
+    }
+    #menu ul li a {
+        font-size: 24px;
+        line-height: 2;
     }
 
     .content-box {
