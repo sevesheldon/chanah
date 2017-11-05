@@ -153,21 +153,35 @@ body {
 /************** Home Page Template ***************/
 
 .content-box {
-    width: 650px;
+    width: 80%;
     margin: 10% auto;
     background-color: rgba(256,256,256,.8);
     padding: 20px 40px;
     overflow: hidden;
 }
 
-#chanah-main-pic {
+/*#chanah-main-pic {
     display: block;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}*/
+
+.main-pic {
+    /*display: block;*/
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
 }
 
-#chanah-main-pic-mobile {
+/*#chanah-main-pic-mobile {
     display: none;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}*/
+
+.mobile-pic {
+    display: none !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
 }
 
 /************** Page Template ***************/
@@ -192,12 +206,6 @@ body {
         background-color: rgb(233, 147, 42);
     }
 
-    .content-box {
-        max-width: 70%;
-        height: auto;
-        /*margin: 20px 0 60px 5%;*/
-        padding: 10px;
-    }
 }
 
 @media screen and (max-width: 735px){
@@ -208,17 +216,25 @@ body {
     }
 
     .content-box {
-        max-width: 90%;
-        padding: 10px;
+        width: 90%;
+        padding: 20px;
         margin: 30px 7%;
     }
 
-    #chanah-main-pic {
+    /*#chanah-main-pic {
         display: none;
+    }*/
+
+    .main-pic {
+        display: none !important;
     }
 
-    #chanah-main-pic-mobile {
+    /*#chanah-main-pic-mobile {
         display: block;
+    }*/
+
+    .mobile-pic {
+        display: block !important;
     }
 
 }
