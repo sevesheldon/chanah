@@ -39,7 +39,7 @@ body {
     top: 0;
     bottom: 0;
     height: 100vh;
-    background-color: rgba(233, 147, 42, .65);
+    background-color: rgba(233, 147, 42, .9);
     color: #FFFFFF;
     z-index: 3;
     box-shadow: 0 -20px 60px rgba(7,5,9,.5);
