@@ -71,6 +71,7 @@
 						</p>
 						<!-- /copyright -->
 						<a href="mailto:chanah.sheldon@gmail.com"><p>chanah.sheldon@gmail.com</p></a>
+						<a href="kentoncodeworks.com"><p style="color: #e6e6e6;">Site by Kenton Codeworks</p></a>
 					</div>
 					<!-- /footer -->
 				</div>

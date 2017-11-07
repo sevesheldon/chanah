@@ -7,7 +7,12 @@
 
 			<div class="content-box">
 
-				<span id="page-header-name"><h1><strong>Chanah Sheldon, M.S., L.Ac.</strong></h1><h1>Acupuncture - NYC</h1></span>
+				<span id="page-header-name">
+					<a href="/">
+						<h1><strong>Chanah Sheldon, M.S., L.Ac.</strong></h1>
+						<h1>Acupuncture - NYC</h1>
+					</a>
+				</span>
 
 				<?php the_content(); ?>
 
